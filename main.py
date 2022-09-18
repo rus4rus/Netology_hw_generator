@@ -23,11 +23,11 @@ def flat_generator(list_: list):
 			k += 1
 			yield list_[i][k]
 
-# nested_list = [
-# 	['a', 'b', 'c'],
-# 	['d', 'e', 'f'],
-# 	[1, 2, None],
-# ]
-nested_list = []
-for item in  flat_generator(nested_list):
+
+nested_list = [
+	['a', 'b', 'c'],
+	['d', 'e', 'f'],
+	[1, 2, None],
+]
+for item in flat_generator(nested_list):
 	print(item)
